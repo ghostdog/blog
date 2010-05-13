@@ -1,3 +1,16 @@
 <?php defined('SYSPATH') or die('No direct script access.'); ?>
 
 2010-05-12 11:59:20 --- ERROR: ReflectionException [ -1 ]: Class controller_blog does not exist ~ SYSPATH/classes\kohana\request.php [ 864 ]
+2010-05-12 13:35:17 --- ERROR: ReflectionException [ -1 ]: Class controller_welcome does not exist ~ SYSPATH/classes\kohana\request.php [ 864 ]
+2010-05-12 14:56:55 --- ERROR: ReflectionException [ -1 ]: Class controller_welcome does not exist ~ SYSPATH/classes\kohana\request.php [ 864 ]
+2010-05-12 15:22:42 --- ERROR: ReflectionException [ -1 ]: Class controller_sdsad does not exist ~ SYSPATH/classes\kohana\request.php [ 864 ]
+2010-05-12 16:00:31 --- ERROR: ErrorException [ 1 ]: Class 'fire' not found ~ SYSPATH/classes\kohana\request.php [ 253 ]
+2010-05-12 16:00:37 --- ERROR: ErrorException [ 1 ]: Class 'fire' not found ~ SYSPATH/classes\kohana\request.php [ 253 ]
+2010-05-12 16:00:38 --- ERROR: ErrorException [ 1 ]: Class 'fire' not found ~ SYSPATH/classes\kohana\request.php [ 253 ]
+2010-05-12 16:00:39 --- ERROR: ErrorException [ 1 ]: Class 'fire' not found ~ SYSPATH/classes\kohana\request.php [ 253 ]
+2010-05-12 16:00:45 --- ERROR: ErrorException [ 1 ]: Class 'fire' not found ~ SYSPATH/classes\kohana\request.php [ 253 ]
+2010-05-12 16:00:46 --- ERROR: ErrorException [ 1 ]: Class 'fire' not found ~ SYSPATH/classes\kohana\request.php [ 253 ]
+2010-05-12 17:41:26 --- ERROR: ReflectionException [ -1 ]: Class controller_welcome does not exist ~ SYSPATH/classes\kohana\request.php [ 863 ]
+2010-05-12 18:10:37 --- ERROR: ErrorException [ 8 ]: Undefined index: controller ~ SYSPATH/classes\kohana\request.php [ 552 ]
+2010-05-12 18:12:40 --- ERROR: Kohana_Request_Exception [ 0 ]: Unable to find a route to match the URI:  ~ SYSPATH/classes\kohana\request.php [ 578 ]
+2010-05-12 18:13:58 --- ERROR: ErrorException [ 8 ]: Undefined index: controller ~ SYSPATH/classes\kohana\request.php [ 552 ]

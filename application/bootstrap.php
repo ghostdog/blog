@@ -8,7 +8,7 @@
  * @see  http://docs.kohanaphp.com/about.configuration
  * @see  http://php.net/timezones
  */
-date_default_timezone_set('America/Chicago');
+date_default_timezone_set('Europe/Warsaw');
 
 /**
  * Set the default locale.
@@ -16,7 +16,7 @@ date_default_timezone_set('America/Chicago');
  * @see  http://docs.kohanaphp.com/about.configuration
  * @see  http://php.net/setlocale
  */
-setlocale(LC_ALL, 'en_US.utf-8');
+setlocale(LC_ALL, 'pl_PL.utf-8');
 
 /**
  * Enable the Kohana auto-loader.
@@ -70,7 +70,7 @@ Kohana::modules(array(
 	// 'database'   => MODPATH.'database',   // Database access
 	// 'image'      => MODPATH.'image',      // Image manipulation
 	// 'orm'        => MODPATH.'orm',        // Object Relationship Mapping
-	// 'pagination' => MODPATH.'pagination', // Paging of results
+	 'pagination' => MODPATH.'pagination', // Paging of results
 	// 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
 	));
 
@@ -78,11 +78,20 @@ Kohana::modules(array(
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
  */
-Route::set('default', '(<controller>(/<action>(/<id>)))')
+
+
+Route::set('home', '(<controller>(/<action>(/<id>)))', array('controller' => 'home', 'action' => 'index'))
 	->defaults(array(
-		'controller' => 'welcome',
+		'controller' => 'home',
 		'action'     => 'index',
 	));
+
+Route::set('catch_all', '<path>', array('path' => '.+'))
+	->defaults(array(
+		'controller' => 'errors',
+		'action'     => '404',
+	));
+
 
 /**
  * Execute the main request. A source of the URI can be passed, eg: $_SERVER['PATH_INFO'].
